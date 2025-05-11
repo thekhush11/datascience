@@ -1,3 +1,13 @@
+POST https :// bfhldevapigw . healthrx . co . in / hiring / testWebhook / PYTHON
+Headers :
+Authorization : < accessToken >
+Content - Type : application / json
+Body :
+
+1
+
+{
+" finalQuery ": 
 SELECT
     E1.EMP_ID,
     E1.FIRST_NAME,
@@ -16,3 +26,4 @@ GROUP BY
     E1.EMP_ID, E1.FIRST_NAME, E1.LAST_NAME, D.DEPARTMENT_NAME
 ORDER BY
     E1.EMP_ID DESC;
+}
